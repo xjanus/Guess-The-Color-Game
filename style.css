@@ -1,0 +1,94 @@
+body {
+    background-color: #232323;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* 
+padding-bottom is what makes the div a square block. Without it,
+it is an empty element with no height. This following link helps 
+understand why height is important.
+https://stackoverflow.com/questions/5657964/css-why-doesn-t-percentage-height-work/5658062#5658062
+ 
+height is based on the maximum height permitted by the element
+and it's parent element. So, here 30% is the 30% of that maximum height.
+It is not in reference to the maximum height/padding of the body. 
+*/
+
+.square{
+
+    width: 30%;
+    margin: 1.66%;
+    background-color: purple;    
+    float: left;
+    padding-bottom: 30%;
+    border-radius: 15%;
+
+    transition: background-color 0.6s;
+    -webkit-transition: background-color 0.6s;
+    -o-transition: background-color 0.6s;
+
+}
+
+h1{
+    text-align: center;
+    color: white;
+    background-color: steelblue;
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.1;
+    padding: 20px 0;
+}
+
+button {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    height: 100%;
+    color: steelblue;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: inherit;
+    outline: none;
+
+    /* Anytime a property changes on our button - color and background in 
+    our case - it should take 1 sec to do that change. */
+
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+
+button:hover{
+    color: white;
+    background: steelblue;
+}
+
+/* We use display inline block with 20% of the total width to create 
+spacing between buttons */
+#message {
+    display: inline-block;
+    width: 20%;
+}
+
+#colorDisplay{
+    font-size: 200%;
+}
+
+#stripe{
+    background-color: white;
+    height: 30px;
+    text-align: center;
+    color: black;
+}
+
+.selected{
+    color: white;
+    background: steelblue;
+}
