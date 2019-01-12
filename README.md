@@ -13,7 +13,7 @@ To play it on your local machine, start by either downloading the zip file or cl
 
 A modern web-browser like Safari, Chrome, Microsoft-Edge, Mozilla Firefox, etc.
 
-### Running
+### Executing
 
 Double-click the "index.html" file after unzipping the downloaded zip file.
 
